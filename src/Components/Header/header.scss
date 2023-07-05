@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 6px;
+
+  & > a {
+    text-decoration: none;
+  }
+
+  &__link {
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__dots {
+    width: 25px;
+    padding: 5px;
+    margin-top: 5px;
+
+    &:hover {
+      background-color: #e8dfdf;
+      border-radius: 50%;
+    }
+  }
+
+  &__sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 36px;
+
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #155ebe;;
+    }
+  }
+}
