@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  color: #70757a;
+
+  &__country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+  }
+
+  &__link {
+    padding: 15px;
+    text-decoration: none;
+    color: #70757a;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 800px) {
+    &__main {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__main {
+    margin: 0 15px;
+  }
+
+  &__about, &__settings {
+    display: flex;
+    justify-content: center;
+  }
+}
