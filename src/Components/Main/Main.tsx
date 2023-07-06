@@ -5,16 +5,17 @@ import LoupeSVG from '../../icons/LoupeSVG';
 import MicrophoneSVG from '../../icons/MicrophoneSVG';
 import PhotoSVG from '../../icons/PhotoSVG';
 
-const handleIWillBeLucky = () => {
-  window.location.href = 'https://www.google.com/doodles';
-};
-
 const redirectToGoogleQuery = (query: string) => {
   window.location.href = `https://www.google.com/search?q=${query}`;
 };
 
 export const Main = () => {
   const [query, setQuery] = useState('');
+  const [name, setName] = useState('Google');
+
+  const handleIWillBeLucky = () => {
+    setName('Oddity');
+  };
 
   const handleSearchInputEnter = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter' && query.trim()) {
@@ -30,7 +31,7 @@ export const Main = () => {
 
   return (
     <div className="main">
-      <GoogleName name="google" />
+      <GoogleName name={name} />
 
       <div className="main__search">
         <LoupeSVG
@@ -45,7 +46,7 @@ export const Main = () => {
           onChange={e => setQuery(e.target.value)}
         />
         <img
-          src="/keyboard.png"
+          src="keyboard.png"
           alt="keyboard"
           className="main__icon"
         />
