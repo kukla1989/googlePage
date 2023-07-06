@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/productsans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product Sansb';
+  src: url('/fonts/productsans.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }

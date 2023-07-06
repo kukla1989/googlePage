@@ -1,0 +1,15 @@
+.google-name {
+  display: flex;
+  font-size: 60px;
+
+  p:first-child {
+    text-transform: uppercase;
+  }
+
+  &__letter {
+    margin: 0;
+    font-family: 'Product Sans', serif;
+    font-weight: bold;
+  }
+}
+
